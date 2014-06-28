@@ -15,7 +15,7 @@ import org.bukkit.entity.Player;
 
 @CommandPermissions(level = AdminLevel.ALL, source = SourceType.BOTH)
 @CommandParameters(description = "Shows information about TotalFreedomMod or reloads it", usage = "/<command> [reload]")
-public class Command_fopm extends TFM_Command
+public class Command_tfm extends TFM_Command
 {
     @Override
     public boolean run(CommandSender sender, Player sender_p, Command cmd, String commandLabel, String[] args, boolean senderIsConsole)
@@ -49,7 +49,7 @@ public class Command_fopm extends TFM_Command
             return true;
         }
 
-        playerMsg("FreedomOPMod for 'Freedom OP', the original all-op server.", ChatColor.GOLD);
+        playerMsg("TotalFreedomMod for 'Total Freedom', the original all-op server.", ChatColor.GOLD);
         playerMsg(String.format("Version "
                 + ChatColor.BLUE + "%s.%s" + ChatColor.GOLD + ", built "
                 + ChatColor.BLUE + "%s" + ChatColor.GOLD + " by "
@@ -59,7 +59,7 @@ public class Command_fopm extends TFM_Command
                 TotalFreedomMod.buildDate,
                 TotalFreedomMod.buildCreator), ChatColor.GOLD);
         playerMsg("Running on " + TFM_ConfigEntry.SERVER_NAME.getString() + ".", ChatColor.GOLD);
-        playerMsg("Original TFM Created by Madgeek1450 and DarthSalamon. FOPM Addition created by buildcarter8", ChatColor.GOLD);
+        playerMsg("Created by Madgeek1450 and DarthSalamon.", ChatColor.GOLD);
         playerMsg("Visit " + ChatColor.AQUA + "http://totalfreedom.me/" + ChatColor.GREEN + " for more information.", ChatColor.GREEN);
 
         return true;
